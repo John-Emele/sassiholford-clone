@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login</title>
+    <script src="tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="w-[100%] h-[100vh] bg-gray-100  py-20  ">
+           <div  id="login-form" class="bg-white rounded-[10px] shadow-lg px-20 pb-20 pt-10 w-[60%] mx-auto">
+            <p class="font-medium uppercase text-center mb-10 text-2xl textogray-500">login</p>
+             <div class=" form-group mb-10">
+                <input id="login-email" type="email" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm ">Email</label>
+                <span id="email-error" class="text-red text-xs"></span>
+            </div>
+             
+             <div class=" form-group mb-10">
+                <input id="login-password" type="password" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm ">Password</label>
+                <span id="password-error" class="text-red text-xs"></span>
+            </div>
+            <div class="w-[80%] mx-auto">
+                <button id="login-btn" type="button" class="w-full h-10 bg-gray-400 rounded-[10px] hover:bg-gray-600 hover:text-white text-black uppercase text-[15px] font-bold">Create</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jquerry.min.js"></script>
+<script src="user-login.js"></script>
+</html>

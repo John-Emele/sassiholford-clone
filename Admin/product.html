@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin:Product Page</title>
+    <script src="../tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="overflow-hidden">
+    <div class="flex w-full h-[100vh]">
+        <div class="w-[30%] bg-gray-200 p-[10px]">
+            <p class="text-center font-light text-2xl mb-5">welcome <span class="font-bold text-2xl ">John</span>!</p>
+
+            <a href="Dashboard.html">
+                <div class="hover:bg-gray-100 hover:text-black p-3 rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Dashboard</p>
+                </div>
+            </a>
+            <a href="category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Category</p>
+                </div>
+            </a>
+
+            <a href="product.html" >
+                <div class=" bg-gray-100 p-3 rounded-[10px]   mb-2">
+                    <p class="text-black uppercase font-bold text-sm ">product</p>
+                </div>
+            </a>
+
+            <a href="user.html">
+                <div class="p-3  hover:bg-gray-100  rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm ">Users</p>
+                </div>
+            </a>
+
+            <a href="create-category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create category</p>
+                </div>
+            </a>
+
+            <a href="create-product.html" >
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create product</p>
+                </div>
+            </a>
+
+            <a href="create-user.html" class="text-gray-500 uppercase font-bold text-sm">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create Users</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="w-[70%] bg-gray-100  overflow-auto relative  right-side">
+            <div class="w-full  py-5 top-0 z-1000 sticky bg-gray-100">
+                <p class="font-light text-xl rounded-[5px]  shadow-lg  uppercase text-gray-500 ps-5 bg-gray-200 w-[95%] mx-auto">product</p>
+
+                <div class="grid grid-cols-3 w-[85%] mx-auto pt-10 gap-4">
+                <div class="p-2 bg-gray-200 rounded-[10px]">
+                    <p class="text-black font-bold uppercase text-center">Total Products</p>
+                    <p id="t-product" class="text-white font-bold uppercase text-center text-3xl">0</p>
+                </div>
+            </div>
+            </div>
+            
+
+            <div id="t-bod" class="w-[85%] mx-auto grid grid-cols-3   gap-5">
+                    
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../jquerry.min.js"></script>
+<script src="product.js"></script>
+</html>

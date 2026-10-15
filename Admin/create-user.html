@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin:create user</title>
+    <script src="../tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="overflow-hidden">
+     <div class="flex w-full h-[100vh]">
+        <div class="w-[30%] mx-auto bg-gray-200 p-[10px] ">
+            <p class="text-center font-light text-2xl mb-5">welcome <span class="font-bold text-2xl ">John</span>!</p>
+
+            <a href="Dashboard.html">
+                <div class="hover:bg-gray-100 hover:text-black p-3 rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Dashboard</p>
+                </div>
+            </a>
+
+            <a href="category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100 mb-2">
+                    <p class="uppercase hover:text-black text-gray-500  font-bold text-sm  ">Category</p>
+                </div>
+            </a>
+
+            <a href="product.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2">
+                    <p class="text-gray-500 uppercase font-bold text-sm hover:text-black">product</p>
+                </div>
+            </a>
+
+            <a href="user.html">
+                <div class="p-3  hover:bg-gray-100  rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm ">Users</p>
+                </div>
+            </a>
+
+            <a href="create-category.html">
+                <div class="p-3  hover:bg-gray-100  rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm">create category</p>
+                </div>
+            </a>
+
+            <a href="create-product.html">
+                <div class=" p-3  hover:bg-gray-100 rounded-[10px]   mb-2 ">
+                    <p class="text-gray-500 uppercase hover:text-black font-bold text-sm ">Create product</p>
+                </div>
+            </a>
+
+            <a href="create-user.html" class="text-gray-500 uppercase font-bold text-sm">
+                <div class=" p-3 rounded-[10px] bg-gray-100 mb-2 ">
+                    <p class=" uppercase font-bold text-sm  text-black">Create Users</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="w-[70%] mx-auto bg-gray-100 pt-10">
+            <div class="w-[95%] mx-auto shadow-lg rounded-[5px] mb-10 bg-gray-200">
+                <p class="font-light text-xl uppercase text-gray-500 ps-5">create user</p>
+            </div>
+           <form action="" class="w-[70%] mx-auto shadow-lg rounded-[10px] p-10 bg-gray-200">
+            <div class="form-group mb-10">
+                <input id="user-f-name" type="text" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm text-gray-600">firstName</label>
+                <span></span>
+            </div>
+             <div class="form-group mb-10">
+                <input id="user-l-name" type="text" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm text-gray-600">lastName</label>
+                <span></span>
+            </div>
+             <div class="form-group mb-10">
+                <input id="user-email" type="email" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm text-gray-600">Email</label>
+                <span></span>
+            </div>
+             <div class="form-group mb-10">
+                <input  id="user-phone" type="tel" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm text-gray-600">Phone No</label>
+                <span></span>
+            </div>
+             <div class="form-group mb-10">
+                <input id="user-password" type="password" class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                <label for="" class="uppercase font-bold text-sm text-gray-600">Password</label>
+                <span></span>
+            </div>
+            <div class="w-[70%] m-auto">
+                <button id="user-btn" type="button" class="w-full h-10 bg-gray-600 rounded-[10px] hover:bg-gray-500 text-white uppercase text-[15px] font-bold">Create</button>
+            </div>
+           </form>
+        </div>
+    </div>
+</body>
+<script src="../jquerry.min.js"></script>
+<script src="create-user.js"></script>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <script src="tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-white z-2 ">
+        <div class="flex gap-10 justify-between w-6xl m-auto items-center pt-1 pb-4 bg-white">
+            <div class="flex gap-10 items-center">
+                <a href="index.html"><h1 class="uppercase text-xl  font-light">Sassi holford</h1></a>
+                <div class="flex items-center me-20">
+                    <ul class="flex gap-7 items-center text-sm">
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" id="drop"
+                                    class="">Bridal</button>
+                                <!-- <div class="drop-menu"> -->
+                                    <div class="dropdown-content">
+                                        <div class="w-[80%] m-auto">
+                                            <a href="#">Collection</a>
+                                            <a href="#">Real Brides</a>
+                                            <a href="#">Somerset bridal outlet</a>
+                                            <a href="#">Faqs</a>
+                                            <a href="#">Trunk shows</a>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" id="drop">Womenswear</button>
+                                <div class="dropdown-content-1" class="w-[300px]">
+                                    <div class="w-[90%] m-auto grid grid-cols-2 py-5">
+                                        <div class="w-full">
+                                            <a href="all.html">All</a>
+                                            <a href="#">Dresses</a>
+                                            <a href="#">Separates</a>
+                                            <a href="shop.html">Mother-Of-the-bride</a>
+                                            <a href="#">Black tie</a>
+                                            <a href="party.html">Party</a>
+                                            <a href="sales.html">sale</a>
+                                        </div>
+                                        <div>
+                                            <img src="images/women-wear.jpg" alt="" class="size-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" id="drop">About</button>
+                                <div class="dropdown-content">
+                                    <div class="w-[80%] m-auto">
+                                        <a href="#">About</a>
+                                        <a href="#">Responsibility</a>
+                                        <a href="#">Journal</a>
+                                        <a href="#">As seen on</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><button class="dropbtn">Journal<button></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" id="drop">Stocklist</button>
+                                <div class="dropdown-content">
+                                    <div class="w-[80%] m-auto">
+                                        <a href="#">Find a stocklist</a>
+                                        <a href="#">Trunk shows</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn" id="drop">Book An Appointment</button>
+                                <div class="dropdown-content">
+                                    <div class="w-[80%] m-auto">
+                                        <a href="#">Book London Bridal</a>
+                                        <a href="#">Book Somerset bridal</a>
+                                        <a href="#">Book women wear</a>
+                                        <a href="#">Trunk shows</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex gap-5 items-center">
+                <a href="log-reg.html">
+                    <p class="text-xs font-medium">My Account</p>
+                </a>
+                <img src="images/magnifying-glass.png" alt="" class="w-4">
+                <img src="images/bag.png" alt="" class="size-3">
+            </div>
+
+        </div>
+    </div>
+    <div class="flex w-6xl m-auto items-center justify-between gap-50">
+        <div class="w-1/2 mt-3">
+            <div class="flex gap-2 items-center">
+                <div class="flex items-center">
+                    <div class="flex items-center gap-1">
+                        <img src="images/back.png" alt="" class="w-3 h-3">
+                        <a href="" class="uppercase text-[14px] text-gray-500 ">shop </a>
+                    </div>
+                    <a href="all.html" class="uppercase font-bold text-black"> / all</a>
+                </div>
+                <!-- <a class="uppercase text-[14px] text-gray-500 ">shop / <span
+                        class="uppercase font-bold text-black">all</span></a> -->
+            </div>
+            <h1 id="pdct-name" class="text-black font-medium text-5xl uppercase mt-3"></h1>
+            <p id="pdct-price" class="text-gray-400 text-lg mt-3"></p>
+            <p id="pdct-descp" class="text-xs text-black mt-4"></p>
+            <!-- <img id="pdct-img" src="images/silver-gray-32x32.jpg" alt=""
+                class="w-10 h-10 rounded-[50%] border-solid border-2 border-black mt-4">
+            <div class="flex gap-4 text-black font-medium mt-5">
+                <p>8</p>
+                <p>10</p>
+                <p>12</p>
+                <p>14</p>
+                <p>16</p>
+                <p>18</p>
+            </div> -->
+            <div id="btn"
+                class="hover:bg-black hover:text-white uppercase border-black border-2 border-solid p-4 text-xs font-bold w-30 mt-5">
+                <p class="hover:animate-[bounce_.5s_ease-in_1]">Add to cart</p>
+            </div>
+            <ul class="text-gray-400 text-[13px] uppercase leading-6 mt-5">
+                <li>Where To Try &plus;</li>
+                <li>Product Information &plus;</li>
+                <li>Responsibilities&plus; </li>
+                <li>Size Help &plus;</li>
+                <li>Deliveries & Returns &plus;</li>
+                <li>Enquiries &plus;</li>
+            </ul>
+            <div class="flex items-center gap-1 mt-1 ms-1">
+                <img src="images/social.png" alt="" class="w-4 h-4">
+                <p class="font-bold text-xs uppercase">pin this</p>
+            </div>
+        </div>
+        <div class="w-1/2 flex items-center mt-5">
+            <img id="back-btn" src="images/chevron (1).png" alt="" class="w-15 h-15">
+            <img id="slider-img" src="" alt="" class="w-90">
+            <img id="next-btn" src="images/chevron.png" alt="" class="w-15 h-15">
+        </div>
+        <!-- <div class="hide" id="box-container"> -->
+        <div class="hide bg-gray-100 shadow-lg" id="box">
+            <div class="flex justify-between items-center">
+                <h3 class="uppercase text-lg font-bold mt-5 ms-3">bag items (<span id="item-counter"></span>)</h3>
+                <img src="images/close.png" alt="" id="bodyy" class="w-10 h-10">
+            </div>
+            <div id="c-dis" class="w-full h-[45%]  gap-4 overflow-auto  right-side">
+                <!-- <div class="w-[50%] h-[80%] mt-3"><img src="images/dress-11.jpg" alt=""
+                            class="w-[60%] h-full object-cover m-auto">
+                    </div>
+                    <div class="w-1/2 mt-3">
+                        <h3 class="font-bold text-lg uppercase">Molton Dress</h3>
+                        <p class="text-gray-400 text-xs ">Size 14</p>
+                        <p class="text-gray-400 text-sm"><span id="number">1</span> × £1,495.00</p>
+                        <div class="flex gap-4">
+                            <p id="increase" class="text-gray-600 text-lg">+</p>
+                            <p id="decrease" class="text-gray-600 text-lg">-</p>
+                        </div>
+                        <p id="delete" class="text-[10px] mt-8">[remove]</p>
+                    </div> -->
+            </div>
+            <div class="bg-gray-200 w-full flex justify-between px-8 pt-10 h-[45%]">
+                <div class="mt-3">
+                    <p  class="uppercase text-sm font-medium">Subtotal</p>
+                    <div class="flex gap-10">
+                        <div id="btn"
+                            class="hover:bg-black hover:text-white uppercase border-black border-1 border-solid p-4 text-xs font-bold w-30 mt-5">
+                            <p class="hover:animate-[bounce_.5s_ease-in_1]">Checkout</p>
+                        </div>
+                        <div id="btn"
+                            class="hover:bg-black hover:text-white uppercase border-black border-1 border-solid p-4 text-xs font-bold w-30 mt-5">
+                            <p class="hover:animate-[bounce_.5s_ease-in_1]">Go to basket</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <span id="currency" class="text-black text-lg"></span>
+                    <p id="total" class="text-black text-lg">0</p>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+
+    <div class="mt-20 w-6xl m-auto">
+        <h2 class="font-bold text-2xl uppercase">more from the collection</h2>
+        <div id="other-dis" class="grid grid-cols-3 w-6xl m-auto gap-7 mb-30">
+            <!-- <div>
+                <div class="reserve">
+                    <img src="images/product-page-dress-21.jpg" alt=""
+                        class="w-full h-full object-cover transition-all duration-500">
+                </div>
+                <div class="flex  justify-between">
+                    <div class="reserve">
+                        <h1 class="font-bold uppercase text-sm">Warwick Jacket Black</h1>
+                        <p class="text-lg text-gray-400">£995</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="grid grid-cols-4 w-6xl  mx-auto mb-30">
+        <ul class="font-medium">
+            <li class="uppercase text-[11px]  font-medium mb-3">About Us</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Privacy Policy</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Our Stores</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Responsibility</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Careers</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Contact Us</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Terms & Conditions</li>
+        </ul>
+        <ul class="font-medium">
+            <li class="uppercase text-[11px]  font-medium mb-3">Bridal</li>
+            <li class="text-[11px]  text-gray-300 uppercase mb-2">Bridal Collections</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Our Brides</li>
+            <li class="text-[11px]  text-gray-300 uppercase mb-2">Make an Appointment</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Stockists</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Bridal FAQs</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Stockists Portal</li>
+        </ul>
+        <ul class="font-medium">
+            <li class="uppercase text-[11px]  font-medium mb-3">Womenswear</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Size Help</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Delivery and Returns</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Make an Appointment</li>
+            <li class="text-[11px]  text-gray-300  uppercase mb-2">Womenswear FAQs</li>
+        </ul>
+        <ul>
+            <li class="uppercase text-[11px]  font-medium mb-3">Follow Sassi</li>
+            <div class="flex gap-3 mb-3">
+                <img src="images/facebook.png" alt="" class="size-3">
+                <img src="images/Old IG2.png" alt="" class="size-3">
+                <img src="images/social.png" alt="" class="size-3">
+                <img src="images/youtube.png" alt="" class="size-3">
+            </div>
+            <p class="mb-3 font-bold text-[11px] font-medium">Sign up to receive updates about new collections, early
+                access to launches and private sales.</p>
+            <div class="flex h-10">
+                <input type="text"
+                    class="h-full ps-5 outline-none w-[70%] mx-auto border border-1 placeholder:text-light placeholder:text-gray-400 placeholder:text-sm focus:rounded-[5px] focus:border-2"
+                    placeholder="Enter your Email">
+                <button class="h-full w-[30%] mx-auto uppercase bg-black text-white text-sm">sign up</button>
+            </div>
+        </ul>
+    </div>
+    <div class="flex justify-between w-6xl m-auto mb-40 items-center">
+        <p class="uppercase text-[12px] text-black font-bold">&copy; 2025 Sassi Holford</p>
+        <p class=" uppercase text-[12px] text-gray-400 font-medium">Website Double Brace</p>
+    </div>
+
+
+    <!-- <div class="justify-end">
+    <div class="hide" id="box" >
+     <p id="bodyy">❌</p>
+     swdfghjklkjhgfdsasdfghjk
+   </div>
+  </div>
+    <button >click</button> -->
+</body>
+<script src="jquerry.min.js"></script>
+<script src="nav.js"></script>
+<script src="product.js"></script>
+
+</html>

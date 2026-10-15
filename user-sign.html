@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user sign-up</title>
+    <script src="tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-hidden">
+    <div class="w-[100%] h-[100vh] bg-gray-100 pt-10 pb-20 ">
+
+        <div id="sign-form" class="relative w-[60%] px-10 py-5 overflow-auto h-130 sign_form mx-auto bg-white shadow-lg rounded-[10px] overflow-auto">
+            <p class="text-2xl font-medium text-center mb-3 text-gray-500 uppercase">sign up</p>
+            <div class=" w-[90%] mx-auto">
+                
+                    <div class="form-group mt-4">
+                        <input id="admin-first" type="text"
+                            class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                            required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">FirstName</label>
+                        <span id="first-error" class="text-red-400 text-xs"></span>
+                    </div>
+                    <div class="form-group mt-8">
+                        <input id="admin-last" type="text"
+                            class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                            required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">LastName</label>
+                        <span id="last-error" class="text-red-400 text-xs"></span>
+                    </div>
+                    <div class="form-group mt-8">
+                        <input id="admin-email" type="email"
+                            class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                            required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">Email</label>
+                        <span id="email-error" class="text-red-400 text-xs"></span>
+                    </div>
+                
+ 
+                    <div class="form-group mt-8">
+                        <input id="admin-phone" type="tel"
+                            class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                            required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">Phone No</label>
+                        <span id="phone-error" class="text-red-400 text-xs"></span>
+                    </div>
+                    <div class="form-group mt-8">
+                        <input id="admin-password" type="password"
+                            class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                            required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">Password</label>
+                        <span id="password-error" class="text-red-400 text-xs"></span>
+                    </div>
+            </div>
+            <div class="w-[80%] mx-auto mt-5 ">
+                <button id="sign-btn" type="button"
+                    class="w-full  h-10 bg-gray-400 rounded-[10px] hover:bg-gray-600 text-black uppercase hover:text-white text-[15px] font-bold">Create</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="jquerry.min.js"></script>
+<script src="user-sign.js"></script>
+<!-- <script src="../new.js"></script> -->
+
+</html>

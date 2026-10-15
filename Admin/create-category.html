@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin:Create category</title>
+    <script src="../tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="overflow-hidden">
+    <div class="flex w-full h-[100vh] ">
+        <div class="w-[30%] bg-gray-200 p-[10px]">
+            <p class="text-center font-light text-2xl mb-5">welcome <span class="font-bold text-2xl ">John</span>!</p>
+
+            <a href="Dashboard.html">
+                <div class="hover:bg-gray-100 hover:text-black p-3 rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Dashboard</p>
+                </div>
+            </a>
+            <a href="category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100 mb-2">
+                    <p class="uppercase hover:text-black text-gray-500  font-bold text-sm  ">Category</p>
+                </div>
+            </a>
+
+            <a href="product.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2">
+                    <p class="text-gray-500 uppercase font-bold text-sm hover:text-black">product</p>
+                </div>
+            </a>
+
+            <a href="user.html">
+                <div class="p-3  hover:bg-gray-100  rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm ">Users</p>
+                </div>
+            </a>
+
+            <a href="create-category.html">
+                <div class=" p-3 bg-gray-100  rounded-[10px]   mb-2 ">
+                    <p class="text-black uppercase font-bold text-sm  ">Create category</p>
+                </div>
+            </a>
+
+            <a href="create-product.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create product</p>
+                </div>
+            </a>
+
+            <a href="create-user.html" class="text-gray-500 uppercase font-bold text-sm">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create Users</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="w-[70%] mx-auto h-full bg-gray-100 pt-10 pb-50 ">
+            <div class="w-[95%] mx-auto shadow-lg rounded-[5px] mb-20 bg-gray-200">
+                <p class="font-light text-xl uppercase text-gray-500 ps-5">create category</p>
+            </div>
+            <form action="" id="category-form"class="w-[70%] mx-auto rounded-[10px]  shadow-lg p-10 bg-gray-200">
+                <div class="form-group mb-10">
+                    <input id="category-name" type="text"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">Category Name</label>
+                    <span id="name-error"></span>
+                </div>
+
+                <div class="form-group mb-10">
+                    <input id="category-image" type="text"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs" required>
+                        <label for="" class="uppercase font-bold text-sm text-gray-600">Image</label>
+                    <span id="image-error"></span>
+                </div>
+                <div class="w-[70%] m-auto">
+                    <button id="create-cat-btn" type="button"
+                        class="w-full h-10 bg-gray-300 rounded-[10px] hover:bg-gray-500 text-black hover:text-white uppercase text-[15px] font-bold">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="../jquerry.min.js"></script>
+<script src="create-category.js"></script>
+
+</html>

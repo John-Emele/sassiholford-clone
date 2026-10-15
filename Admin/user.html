@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin:user</title>
+    <script src="../tailwindcss.min.js"></script>
+</head>
+
+<body class="overflow-hidden">
+    <div class="flex w-full h-[100vh]">
+        <div class="w-[30%] bg-gray-200 p-[10px]">
+            <p class="text-center font-light text-2xl mb-5">welcome <span class="font-bold text-2xl ">John</span>!</p>
+
+            <a href="Dashboard.html">
+                <div class="hover:bg-gray-100 hover:text-black p-3 rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Dashboard</p>
+                </div>
+            </a>
+            <a href="category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Category</p>
+                </div>
+            </a>
+
+            <a href="product.html">
+                <div class=" p-3 rounded-[10px]  hover:bg-gray-100  mb-2">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">product</p>
+                </div>
+            </a>
+
+            <a href="user.html">
+                <div class="p-3 bg-gray-100 rounded-[10px] mb-2 ">
+                    <p class="text-black uppercase font-bold text-sm ">Users</p>
+                </div>
+            </a>
+
+            <a href="create-category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create category</p>
+                </div>
+            </a>
+
+            <a href="create-product.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create product</p>
+                </div>
+            </a>
+
+            <a href="create-user.html" class="text-gray-500 uppercase font-bold text-sm">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create Users</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="w-[70%] bg-gray-100 relative overflow-auto right-side">
+            <div class="w-full pt-5 bg-gray-100 sticky top-0 z-1000">
+                <p class="w-[95%] mx-auto shadow-lg rounded-[5px] font-light text-xl uppercase mb-10 text-gray-500 bg-gray-200 ps-5">Dashbaord</p>
+
+                <div class="grid grid-cols-3 w-[85%] mx-auto gap-4">
+                    <div class="p-2 bg-gray-200 rounded-[10px]">
+                        <p class="text-gray-700 font-bold uppercase text-center">Total Users</p>
+                        <p id="t-user" class="text-gray-400 font-bold uppercase text-center text-3xl">0</p>
+                    </div>
+                </div>
+
+                <table class="w-[90%] mx-auto  mt-5">
+                    <thead>
+                        <tr
+                            class="uppercase sticky  top-0 z-1000 text-xs bg-gray-200 border-b border-b-1 text-center border-b-solid border-b-gray-200 ">
+                            <th class="text-gray-700 p-2">S/N</th>
+                            <th class="text-gray-700">firstname</th>
+                            <th class="text-gray-700">lastname</th>
+                            <th class="text-gray-700">Email</th>
+                            <th class="text-gray-700">Phone No.</th>
+                            <th class="text-gray-700">Password</th>
+                            <th class="text-gray-700 px-1"></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="relative overflow-auto">
+                <table class="w-[90%] mx-auto  ">
+                    
+                    <tbody id="t-bod" class="">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../jquerry.min.js"></script>
+<script src="user.js"></script>
+
+</html>

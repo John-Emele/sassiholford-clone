@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin:create preduct</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../tailwindcss.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="overflow-hidden">
+    <div class="flex w-full h-[100vh]">
+        <div class="w-[30%] bg-gray-200 p-[10px] ">
+            <p class="text-center font-light text-2xl mb-5">welcome <span class="font-bold text-2xl ">John</span>!</p>
+
+            <a href="Dashboard.html">
+                <div class="hover:bg-gray-100 hover:text-black p-3 rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Dashboard</p>
+                </div>
+            </a>
+
+            <a href="category.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100 mb-2">
+                    <p class="uppercase hover:text-black text-gray-500  font-bold text-sm  ">Category</p>
+                </div>
+            </a>
+
+            <a href="product.html">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2">
+                    <p class="text-gray-500 uppercase font-bold text-sm hover:text-black">product</p>
+                </div>
+            </a>
+
+            <a href="user.html">
+                <div class="p-3  hover:bg-gray-100  rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm ">Users</p>
+                </div>
+            </a>
+
+            <a href="create-category.html">
+                <div class="p-3  hover:bg-gray-100  rounded-[10px] mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm">create category</p>
+                </div>
+            </a>
+
+            <a href="create-product.html">
+                <div class=" p-3 rounded-[10px] bg-gray-100  mb-2 ">
+                    <p class="text-black uppercase font-bold text-sm ">Create product</p>
+                </div>
+            </a>
+
+            <a href="create-user.html" class="text-gray-500 uppercase font-bold text-sm">
+                <div class=" p-3 rounded-[10px] hover:bg-gray-100  mb-2 ">
+                    <p class="text-gray-500 uppercase font-bold text-sm  hover:text-black">Create Users</p>
+                </div>
+            </a>
+
+        </div>
+
+
+        <div class="w-[70%] mx-auto bg-gray-100  overflow-auto right-side relative">
+            <div class="w-full mx-auto   py-10 bg-gray-100 sticky top-0 z-1000">
+                <p
+                    class="font-light shadow-lg rounded-[5px]  text-xl uppercase bg-gray-200 w-[95%] mx-auto text-gray-500 ps-5">
+                    create product</p>
+            </div>
+            <div class="bg-gray-200 w-[70%] mx-auto shadow-lg rounded-[10px] p-10 ">
+                <div class="form-group mb-10">
+                    <input type="text" id="pdct-name"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Name</label>
+                </div>
+                <!-- <div class="form-group  mb-10 relative">
+                    <input id="pdct-image" type="file" class="form-input image-file" hidden>
+                    <div id="change-box" class="image-box w-[80%] h-50 mx-auto border-1 border-solid border-[#fbe0c0] hide">
+                        <img id="changed-image" src="../images/ja-3.avif" alt="" class="w-full h-full">
+                    </div>
+                    <button type="button" id="upload-btn" class="w-full rounded-[10px] mx-auto h-[150px] bg-gray-100 flex flex-column justify-center items-center top-10 left-20">
+                        <i class="fa fa-cloud-upload text-[80px] text-gray-400"></i>
+                    </button>
+                    <p id="error-image" class="text-red-300 font-bold text-sm"></p>
+                </div> -->
+                <div class="form-group mb-10">
+                    <input type="text" id="pdct-image"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Image</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="text" id="pdct-color"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">color</label>
+                </div>
+                <div class="form-group mb-10">
+                    <select id="pdct-currency"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <option value="₦" class="text-gray-800 font-bold uppercase text-xs">NGN</option>
+                        <option value="$" class="text-gray-800 font-bold uppercase text-xs">USD</option>
+                        <option value="£" class="text-gray-800 font-bold uppercase text-xs">Pounds</option>
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Currency</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="text" id="pdct-price"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Price</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="text" id="pdct-brand"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Brand</label>
+                </div>
+                <div class="form-group mb-10">
+                    <select id="pdct-has-discount"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <option value="true" class="text-gray-800 font-bold uppercase text-xs">true</option>
+                        <option value="false" class="text-gray-800 font-bold uppercase text-xs">false</option>
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">has discount</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="number" id="pdct-discount"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">discount</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="date" id="pdct-dis-expr"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">discount expiration</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="number" id="pdct-min-q"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">minimum quantity</label>
+                </div>
+                <div class="form-group mb-10">
+                    <input type="number" id="pdct-max-q"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">maximum Quantity</label>
+                </div>
+
+                <div class="form-group mb-10">
+                    <input type="number" id="pdct-q"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Quantity</label>
+                </div>
+                <div class="form-group mb-10">
+                    <textarea id="pdct-descp"
+                        class="w-full rounded-[10px] h-20 bg-gray-100 p-3 outline-none text-gray-800 font-bold  text-xs"
+                        required></textarea>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Description</label>
+                    <!-- <input type="text" class="w-full rounded-[10px] h-10 bg-gray-400 p-3 outline-none text-gray-800 font-bold  text-xs"> -->
+                </div>
+                <div class="form-group mb-10">
+
+                    <select id="pdct-category"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <!-- <option value="Mother-Of-The-Bride" class="text-gray-800 font-bold uppercase text-xs">
+                            Mother-Of-The-Bride</option>
+                        <option value="Sale" class="text-gray-800 font-bold uppercase text-xs">Sale</option>
+                        <option value="Party" class="text-gray-800 font-bold uppercase text-xs">Party</option> -->
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Category</label>
+                </div>
+                <div class="form-group mb-10">
+                    <select id="pdct-shipment"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <option value="true" class="text-gray-800 font-bold uppercase text-xs">true</option>
+                        <option value="false" class="text-gray-800 font-bold uppercase text-xs">false</option>
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">shipment</label>
+                </div>
+                <div class="form-group mb-10">
+                    <select id="pdct-refund"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <option value="true" class="text-gray-800 font-bold uppercase text-xs">true</option>
+                        <option value="false" class="text-gray-800 font-bold uppercase text-xs">false</option>
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Refund policy</label>
+                </div>
+                <div class="form-group mb-10">
+                    <select id="pdct-variation"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <option value="true" class="text-gray-800 font-bold uppercase text-xs">true</option>
+                        <option value="false" class="text-gray-800 font-bold uppercase text-xs">false</option>
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Variation</label>
+                </div>
+                <div class="form-group mb-10">
+                    <select id="ship-loc"
+                        class="w-full rounded-[10px] h-10 bg-gray-100 p-2 outline-none text-gray-800 font-bold uppercase text-xs"
+                        required>
+                        <option value=""></option>
+                        <option value="Nigeria" class="text-gray-800 font-bold uppercase text-xs">Nigeria</option>
+                        <option value="Paris" class="text-gray-800 font-bold uppercase text-xs">Paris</option>
+                        <option value="USA" class="text-gray-800 font-bold uppercase text-xs">USA</option>
+                    </select>
+                    <label for="" class="uppercase font-bold text-sm text-gray-600">Shipping Locations</label>
+                </div>
+                <div class="w-[70%] m-auto mb-10">
+                    <button type="button" id="pdct-btn"
+                        class="w-full h-10 bg-gray-400 rounded-[10px] hover:bg-gray-500 hover:text-white uppercase text-[15px] font-bold">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../jquerry.min.js"></script>
+<script src="create-product.js"></script>
+
+</html>
